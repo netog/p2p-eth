@@ -1,4 +1,12 @@
+pub mod secret;
+pub mod hash_mac;
+mod ecies;
+mod error;
+
+
 use bytes::{Bytes, BytesMut};
+
+use crate::p2p_eth::hash_mac::HashMac;
 pub struct Handshake {
 
 }
