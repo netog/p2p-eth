@@ -1,8 +1,8 @@
 pub mod secret;
 pub mod hash_mac;
 mod ecies;
-mod error;
-mod messages;
+pub mod error;
+pub mod messages;
 
 use aes::cipher::{KeyIvInit, StreamCipher};
 use byteorder::{BigEndian, ByteOrder};
